@@ -1,26 +1,26 @@
 package server
 
-import (
-	"github.com/gofiber/fiber/v2"
+// import (
+// 	"github.com/gofiber/fiber/v2"
 
-	"mini_blog/internal/database"
-)
+// 	"mini_blog/internal/database"
+// )
 
-type FiberServer struct {
-	*fiber.App
+// type FiberServer struct {
+// 	*fiber.App
 
-	db database.Service
-}
+// 	db database.Service
+// }
 
-func New() *FiberServer {
-	server := &FiberServer{
-		App: fiber.New(fiber.Config{
-			ServerHeader: "mini_blog",
-			AppName:      "mini_blog",
-		}),
+// func New() *FiberServer {
+// 	server := &FiberServer{
+// 		App: fiber.New(fiber.Config{
+// 			ServerHeader: "mini_blog",
+// 			AppName:      "mini_blog",
+// 		}),
 
-		db: database.New(),
-	}
+// 		db: database.New(),
+// 	}
 
-	return server
-}
+// 	return server
+// }
